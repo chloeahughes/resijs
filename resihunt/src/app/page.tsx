@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { UserNav } from "@/components/user-nav"
 import Link from "next/link"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import SearchResultsContent from "@/components/search-results-content"
 
 export default function Home() {
   return (
