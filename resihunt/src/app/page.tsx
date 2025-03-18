@@ -15,32 +15,32 @@ export default function Home() {
         }}
       >
         <header className="absolute top-0 left-0 right-0 bg-transparent z-10">
-          <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-            <Link href="/" className="text-3xl font-bold text-white">
+          <div className="container mx-auto px-8 py-8 flex justify-between items-center">
+            <Link href="/" className="text-4xl font-bold text-white">
               ResiHunt
             </Link>
             <UserNav />
           </div>
         </header>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl px-4">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">Find Your Next Investment Property</h1>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl px-8">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-12">Find Your Next Investment Property</h1>
           </div>
 
           <Tabs defaultValue="structured" className="w-full">
-            <TabsList className="w-full bg-white/10 backdrop-blur-md mb-4">
-              <TabsTrigger value="structured" className="text-white w-1/2">
+            <TabsList className="w-full bg-white/10 backdrop-blur-md mb-6">
+              <TabsTrigger value="structured" className="text-white w-1/2 py-4 text-lg">
                 Search by Filter
               </TabsTrigger>
-              <TabsTrigger value="natural" className="text-white w-1/2">
+              <TabsTrigger value="natural" className="text-white w-1/2 py-4 text-lg">
                 Ask a Question
               </TabsTrigger>
             </TabsList>
 
             <TabsContent value="structured">
-              <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 space-y-6">
-                <div className="flex flex-col md:flex-row gap-4 items-center text-white">
+              <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 space-y-8">
+                <div className="flex flex-col md:flex-row gap-6 items-center text-white text-lg">
                   <span>I'm looking for the</span>
                   <SearchBar placeholder="Rental Yield" options={metricTypes} darkMode />
                   <span>for</span>
@@ -49,14 +49,14 @@ export default function Home() {
                   <SearchBar placeholder="California" options={locations} darkMode />
                 </div>
                 <Link href="/search-results" className="block">
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">Search Properties</Button>
+                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white text-lg py-6">Search Properties</Button>
                 </Link>
               </div>
             </TabsContent>
 
             <TabsContent value="natural" className="w-full">
               <NaturalLanguageSearch />
-              <div className="mt-4 text-center text-white/80 text-sm">
+              <div className="mt-6 text-center text-white/80 text-base">
                 Ask specific questions about properties, markets, or investment strategies
               </div>
             </TabsContent>
@@ -64,8 +64,8 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md">
-          <div className="container mx-auto px-4 py-2 text-center">
-            <p className="text-white/90 text-sm">
+          <div className="container mx-auto px-8 py-4 text-center">
+            <p className="text-white/90 text-base">
               <span className="font-semibold">Coming Soon:</span> Chat with our Virtual Agent to find the perfect
               investment property
             </p>
